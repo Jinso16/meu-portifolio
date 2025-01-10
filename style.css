@@ -5,6 +5,17 @@ a {
     color: inherit;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgb(27, 27, 27);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(235, 235, 235);
+    border: 2px solid rgb(27, 27, 27);
+    border-radius: 100px;
+}
+
 body {
     background: linear-gradient(180deg, rgb(15, 15, 15) 0%, rgb(31, 31, 31) 50%, rgb(15, 15, 15)100%);
     color: rgb(235, 235, 235);
@@ -19,16 +30,18 @@ body {
     margin: 0;
 
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 main {
     width: 650px;
 
-    background-color: rgb(10, 10, 10);
+    /*background-color: rgb(10, 10, 10);*/
 
     padding: 50px 50px 50px 50px;
     margin: 50px;
+    margin-bottom: 100px;
 
     border-radius: 10px;
 
@@ -58,6 +71,8 @@ h2 {
 
 .foto {
     width: 20vh;
+
+    margin-left: 30px;
 
     border-radius: 8px;
 
@@ -94,6 +109,8 @@ h2 {
 
     justify-content: space-between;
     align-items: center;
+
+    flex-wrap: wrap;
 }
 
 .inst-1 {
@@ -172,6 +189,238 @@ h2 {
     margin-top: 50px;
 }
 
+.div-projetos {
+    margin-top: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1cm;
+
+    justify-content: space-between;
+}
+
+.projeto {
+    display: flex;
+    flex-direction: column;
+
+    width: 306px;
+    min-height: 306px;
+
+    background-color: rgb(30, 30, 30);
+
+    box-shadow: 0 0 10px 1px rgb(10, 10, 10);
+
+    border-radius: 8px;
+}
+
+.img-projeto {
+    cursor: pointer;
+
+    background-size: 115%;
+    border-radius: 8px 8px 0 0;
+
+    background-position: center;
+
+    width: 100%;
+    height: 160px;
+
+    transition: .2s ease;
+}
+
+.img-projeto:hover {
+    background-size: 125%;
+}
+
+.all-infos {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    padding: 0 10px 10px 10px;
+
+    justify-content: space-between;
+}
+
+.info-projeto {
+    padding: 10px 0px 10px 0px;
+}
+
+.project-name {
+    margin: 0;
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+.text-projeto {
+    margin: 0;
+    font-weight: 300;
+    opacity: 80%;
+
+    margin-bottom: 5px;
+}
+
+.projeto-objetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.projeto-obj {
+    background-color: rgb(15, 15, 15);
+    color: rgb(235, 235, 235);
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+
+    box-shadow: 0 0 5px 2px rgb(27, 27, 27);
+}
+
+.text-obj {
+    margin: 0;
+}
+
+.links-projeto {
+    display: flex;
+    gap: .5rem;
+
+    padding: 10px 0px 0 0px;
+}
+
+.link  {
+    cursor: pointer;
+
+    display: flex;
+    height: 25px;
+    width: 80px;
+    background-color: rgb(235, 235, 235);
+
+    border-radius: 5px;
+
+    padding: 1px;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    color: rgb(15, 15, 15);
+
+    transition: 0.2s ease;
+}
+
+.link:hover {
+    padding: 1px 5px 1px 5px;
+
+    transition: 0.2s ease;
+}
+
+.link-icone {
+    width: 15px;
+    height: 15px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.bar {
+    display: flex;
+    background-color: rgb(27, 27, 27);
+
+    justify-content: space-around;
+    align-items: center;
+
+    width: 150px;
+
+    padding: 5px 10px 5px 10px;
+
+    border: 1px solid rgb(58, 58, 58);
+    box-shadow: 0 0 5px 1px rgb(58, 58, 58) inset;
+    border-radius: 100px;
+
+    transition: .4s ease;
+}
+
+.bar:hover {
+    width: 190px;
+}
+
+.div-btn {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 100%;
+
+    transition: .4s ease;
+}
+
+.div-btn:hover {
+    background-color: rgb(51, 51, 51);
+
+    width: 42px;
+    height: 42px;
+}
+
+.btn {
+    width: 20px;
+    height: 20px;
+}
+
+.divider {
+    cursor:default;
+
+    margin: 0;
+    font-weight: 200;
+}
+
+.not {
+    display: flex;
+    position: absolute;
+    margin-bottom: 86px;
+
+    opacity: 0;
+
+    height: 20px;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 2px 5px 2px 5px;
+
+    border-radius: 5px;
+
+    background-color: rgb(235, 235, 235);
+    color: rgb(15, 15, 15);
+
+    transition: .3s ease;
+}
+
+.div-btn:hover .not {
+    opacity: 1;
+}
+
+.not-txt {
+    margin: 0;
+
+    font-weight: 600;
+}
+
 @media(max-width: 720px){
     .hero
     {
@@ -182,5 +431,15 @@ h2 {
     {
         margin-top: 5px;
         text-align: center;
+    }
+}
+
+@media(max-width: 880px) {
+    main {
+        width: 70%;
+    }
+
+    .projeto {
+        width: 100%;
     }
 }
