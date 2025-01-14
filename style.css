@@ -422,6 +422,24 @@ footer {
 }
 
 @media(max-width: 720px){
+    main   {
+        width: 100%;
+        padding: 50px 20px;
+        margin: 0;
+    }
+
+    .ola {
+        font-size: 25px;
+    }
+
+    .estudo {
+        font-size: larger;
+    }
+
+    .sobre-txt-2 {
+        text-align: justify;
+    }
+
     .hero
     {
         flex-direction: column-reverse;
@@ -436,7 +454,7 @@ footer {
 
 @media(max-width: 880px) {
     main {
-        width: 70%;
+        width: 80%;
     }
 
     .projeto {
