@@ -429,6 +429,10 @@ footer {
     margin-top: 50px;
 }
 
+.idiomas {
+    margin-top: 50px;
+}
+
 @media(max-width: 720px){
     main   {
         width: 100%;
